@@ -1,7 +1,12 @@
 package com.powerlanguage.rultimatecss;
 /*
  * Parses a folder of images and produces css compatible with reddit
- * Images will be displayed randomly based on the usertext form name 
+ * Images will be displayed at timed intervals based on the usertext form name
+ * 
+ * place photos in 'data/images' with the format
+ * firstname lastname #photoNumber
+ * 
+ * place full names and credits in data/photographer-info.txt
  */
 
 
@@ -12,15 +17,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-
-/* TODO
- * Text will be generated using the file name, so it should be exact
- * format the output of image file names to match reddits conversion
- * 
- * Have a file of photographers and their URLS
- * Setup a key > value dict so that each url is matched to a photographer
- * 
- */
 
 public class CssGenerator {
 
@@ -75,7 +71,7 @@ public ArrayList<String> ids = new ArrayList<String>();
 			sb.append("\n");
 			sb.append("}");
 			sb.append("\n \n");//adding credit
-			sb.append(String.format(".listing-page .side .usertext[id$=\"%s\"] a[href^=\"%s\"]::after {", id, externalURL));
+			sb.append(String.format(".listing-page .side .usertext[id$=\"%s\"] a[href=\"%s\"]::after {", id, externalURL));
 			sb.append("\n");
 			sb.append(String.format("content: \"Photo by %s, Ultiphotos\";", photographerName));
 			sb.append("\n");
