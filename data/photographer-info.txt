@@ -2,6 +2,7 @@ Alex Fraser,http://www.ultiphotos.com/photographers/alexfraser
 Brandon Wu,http://www.ultiphotos.com/photographers/bwu
 Brian Canniff,http://www.ultiphotos.com/photographers/briancanniff
 Christina Schmidt,http://www.ultiphotos.com/photographers/christinaschmidt
+Daniel Tjioe,http://www.ultiphotos.com/photographers/danieltjioe
 Jeff Albenberg,http://www.ultiphotos.com/photographers/jeffalbenberg
 Kevin Leclaire,http://www.ultiphotos.com/photographers/kevinleclaire
 Marshall Goff,http://www.ultiphotos.com/
@@ -9,3 +10,7 @@ Pete Guion,http://www.ultiphotos.com/photographers/peteguion
 Sandy Canetti,http://www.ultiphotos.com/photographers/sandycanetti
 Scobel Wiggins,http://www.ultiphotos.com/photographers/scobelwiggins
 Scott Roeder,http://www.ultiphotos.com/photographers/scottroeder
+Jolie J Lang,http://www.ultiphotos.com/photographers/joliejlang
+Terry Nelson,http://www.ultiphotos.com/photographers/terrynelson
+NexGen Ultimate,http://www.ngnultimate.com
+Andy Moss,http://www.theshowgame.co.uk

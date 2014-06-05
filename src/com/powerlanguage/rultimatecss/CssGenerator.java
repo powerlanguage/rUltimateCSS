@@ -4,7 +4,7 @@ package com.powerlanguage.rultimatecss;
  * Images will be displayed at timed intervals based on the usertext form name
  * 
  * place photos in 'data/images' with the format
- * firstname lastname #photoNumber
+ * firstname lastname_#photoNumber
  * 
  * place full names and credits in data/photographer-info.txt
  */
@@ -65,18 +65,19 @@ public ArrayList<String> ids = new ArrayList<String>();
 			String redditURL = "%%" + redditFormattedName + "-" + photoNum + "%%";
 			
 			StringBuilder sb = new StringBuilder(); //adding image
-			sb.append(String.format(".listing-page .side .usertext[id$=\"%s\"] a[href*=\"/random-image\"]::before {", id));
-			sb.append("\n");
+			
+			/*
+			sb.append(String.format(".side .usertext[id$=\"%s\"] a[href*=\"/random-image\"]::before {", id));
 			sb.append(String.format("content: url(%s);", redditURL));
-			sb.append("\n");
 			sb.append("}");
-			sb.append("\n \n");//adding credit
-			sb.append(String.format(".listing-page .side .usertext[id$=\"%s\"] a[href=\"%s\"]::after {", id, externalURL));
 			sb.append("\n");
+			*/
+			
+			sb.append(String.format(".side .usertext[id$=\"%s\"] a[href=\"%s\"]::after {", id, externalURL));
 			sb.append(String.format("content: \"Photo by %s, Ultiphotos\";", photographerName));
-			sb.append("\n");
 			sb.append("}");
-			sb.append("\n \n");
+			sb.append("\n");
+
 			
 			System.out.print(sb);
 					
